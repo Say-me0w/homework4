@@ -1,0 +1,100 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    }
+a {
+    text-decoration: none;
+    color: #000000;
+}
+ li {
+    list-style: none;
+ }
+
+ img {
+    max-width: 100%;
+ }
+ body {
+    height: 100%;
+    
+ }
+
+.container {
+    max-width: 1920px;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main';
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 74px 20px 96px;
+    background: #0F1D26;
+}
+
+.nav-ul {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-a {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.header {
+    grid-area: header;
+
+}
+.main {
+    grid-area: main;
+    padding-top: 210px;
+    padding-left: 103px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url("image/car1.png");
+}
+
+.title {
+    color: #AA2B2A;
+    font-family: Montserrat;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    max-width: 549px;
+    flex-shrink: 0;    
+}
+.text {
+    margin-top: 24px;
+    margin-bottom: 80px;
+    max-width: 388px;
+    color: #AA2B2A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+}
+.btn {
+    border: 1px solid #AA2B2A;
+    color: #AA2B2A;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;   
+    flex-shrink: 0;
+    padding: 12px 80px;
+    max-width: 200px;     
+    text-align: center;
+}
+
